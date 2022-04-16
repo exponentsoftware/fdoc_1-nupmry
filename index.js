@@ -79,7 +79,8 @@ console.log(sevenRandomNumbers())
 // 2C
 const reverseArray = (array) => {
     var reversed = [];
-    array.forEach(element => { reversed.unshift(element) }); // This can have multiple solutions; iterating the array backwards and pushing the elements to the new array. In place of forEach we can use "for".
+    array.forEach(element => { reversed.unshift(element) });
+    // This can have multiple solutions; iterating the array backwards and pushing the elements to the new array. In place of forEach we can use "for".
     return reversed;
 }
 
@@ -87,7 +88,8 @@ console.log(reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // 2D
-const checkUniqueness = (array) => { // This can have multiple solutions; using an Object, running a nested for loop, and checking against each element.
+const checkUniqueness = (array) => {
+    // This can have multiple solutions; using an Object, running a nested for loop, and checking against each element.
     const set = new Set(array);
     return set.size === array.length;
 }
